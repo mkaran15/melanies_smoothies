@@ -39,7 +39,7 @@ if ingredients_list:
     
     for each_fruit in ingredients_list:
         ingredients_string+=each_fruit + ' '
-    st.write(ingredients_string)
+    #st.write(ingredients_string)
 
 my_insert_stmt = """ insert into smoothies.public.orders(ingredients,name_on_order)
             values ('""" + ingredients_string + """','""" + name_on_order + """')"""
